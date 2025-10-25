@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT License"
+
+[[mods]]
+modId="killenchant"
+version="0.0_1.21.5-upTo-1.21.10"
+
+displayName="Kill Enchant"
+
+authors="Mattéo 35"
+credits="CerealNormal504 (for the idea)"
+
+description="Modify the enchantments level inside the enchantment table based on the kill/death count"
+
+[[dependecies.killenchant]]
+modId="neoforge"
+mandatory=true
+side="BOTH"
+
+[[dependencies.killenchant]]
+modId="mr_beyondenchant"
+mandatory=false
+type="optional"
+referralUrl="https://www.curseforge.com/minecraft/mc-mods/beyondenchant/files/7111096"
+
+[[dependencies.killenchant]]
+modId="minecraft"
+versionRange="[1.21.5,)"
+

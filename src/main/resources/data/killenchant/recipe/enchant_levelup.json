@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+
+  "key": {
+    "A": [
+      "minecraft:netherite_ingot"
+    ],
+    "B": [
+      "minecraft:diamond_block"
+    ],
+    "C": [
+      "minecraft:enchanted_book"
+    ]
+  },
+
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+
+  "result": {
+    "count": 1,
+    "id": "killenchant:enchant_levelup"
+  },
+  "show_notification": false
+}
