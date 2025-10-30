@@ -9,6 +9,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.entity.EquipmentSlot;
 
 import matteo.KillEnchant.registries.KillEnchantConfig;
 
@@ -35,7 +36,7 @@ public class EnchantLevelUpItem extends Item {
                 data.putInt("KillEnchant", killEnchant);
                 player.getPersistentData().put(Player.PERSISTED_NBT_TAG, data);
                 player.displayClientMessage(Component.literal("Your EnchantLevel score is now " + killEnchant), false);
-                item.hurtAndBreak(1, player, item.getEquipmentSlot()); //Will need to take "hand" and do a version specifically for 1.21.5
+                item.hurtAndBreak(1, player, EquipmentSlot.MAINHAND);
             }
         }
         return result;
